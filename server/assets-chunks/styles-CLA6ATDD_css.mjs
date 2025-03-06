@@ -1,0 +1,2 @@
+export default `*,:before,:after{box-sizing:border-box}html{font-family:system-ui;overflow-x:hidden;scroll-behavior:smooth;line-height:1.15;-webkit-text-size-adjust:100%}body{font-size:14px;margin:0;background:var(--page-bg-color)}:root{--page-bg-color: #000;--grey-color: #86868B;--dark-color: #282E3480;--blue-color: #0B84FE}h1,h2,h3,h4,h5,h6{margin:0}
+`;
