@@ -1,0 +1,26 @@
+<div class="custom-controls">
+  <div
+    class="control"
+    type="button"
+    (click)="togglePlaying.emit()"
+  >
+    <img
+      [ngSrc]="isPlaying() ? '/pause.svg':'/play.svg'"
+      alt="play/pause"
+      width="20"
+      height="20"
+    >
+  </div>
+  <div
+    class="control"
+    type="button"
+    (click)="toggleFullscreen.emit()"
+  >
+    <img
+      ngSrc="/fullscreen.svg"
+      alt="play"
+      width="18"
+      height="18"
+    >
+  </div>
+</div>

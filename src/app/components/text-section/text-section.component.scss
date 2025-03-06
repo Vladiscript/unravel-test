@@ -1,0 +1,20 @@
+
+.text-section {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+
+  p {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.grey {
+  color: #86868B;
+}

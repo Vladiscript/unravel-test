@@ -1,0 +1,18 @@
+<div
+  class="text-section"
+  appIntersection
+  (isIntersecting)="onIntersection($event)"
+>
+  @if (show()) {
+    <p [@fadeInWords]>
+      @for (word of words; let i = $index; track i) {
+        <span
+          class="word grey"
+          [class]="{grey: i < 4}"
+        >{{ word }}
+      </span>
+      }
+    </p>
+  }
+</div>
+

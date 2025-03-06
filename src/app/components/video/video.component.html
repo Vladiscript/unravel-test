@@ -1,0 +1,23 @@
+<div
+  #videoContainer
+  appIntersection
+  (isIntersecting)="onIntersection($event)"
+  class="video-container"
+  [@containerAnimation]="isActivated() ? 'active': 'inactive'"
+>
+  <video
+    #video
+    src="/video.mp4"
+    loop
+    muted
+    class="video"
+    [@videoAnimation]="isActivated() ? 'active': 'inactive'"
+  >
+  </video>
+  <app-video-controls
+    [isPlaying]="isVideoPlaying()"
+    [isFullscreen]="isFullscreen()"
+    (togglePlaying)="togglePlaying()"
+    (toggleFullscreen)="toggleFullscreen()"
+  ></app-video-controls>
+</div>
