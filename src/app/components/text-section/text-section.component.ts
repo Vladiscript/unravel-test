@@ -1,5 +1,5 @@
-import {Component, signal} from '@angular/core'
-import {animate, query, stagger, state, style, transition, trigger} from '@angular/animations'
+import {ChangeDetectionStrategy, Component, signal} from '@angular/core'
+import {animate, query, stagger, style, transition, trigger} from '@angular/animations'
 import {IntersectionDirective} from '../../directives/intersection.directive'
 
 @Component({
@@ -9,6 +9,7 @@ import {IntersectionDirective} from '../../directives/intersection.directive'
   ],
   templateUrl: './text-section.component.html',
   styleUrl: './text-section.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
     trigger('fadeInWords', [
       transition(':enter', [

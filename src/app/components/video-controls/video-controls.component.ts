@@ -1,4 +1,4 @@
-import {Component, input, output} from '@angular/core'
+import {ChangeDetectionStrategy, Component, input, output} from '@angular/core'
 import {NgOptimizedImage} from "@angular/common"
 
 @Component({
@@ -7,7 +7,8 @@ import {NgOptimizedImage} from "@angular/common"
     NgOptimizedImage
   ],
   templateUrl: './video-controls.component.html',
-  styleUrl: './video-controls.component.scss'
+  styleUrl: './video-controls.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class VideoControlsComponent {
   isPlaying = input.required<boolean>()

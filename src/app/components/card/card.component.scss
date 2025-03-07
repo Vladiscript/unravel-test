@@ -38,3 +38,19 @@
     color: #fff;
   }
 }
+
+@media (max-width: 840px) {
+  .card {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
