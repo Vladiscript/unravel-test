@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Unravel-test": {
+    "unravel-test": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Unravel-test:build:production"
+              "buildTarget": "unravel-test:build:production"
             },
             "development": {
-              "buildTarget": "Unravel-test:build:development"
+              "buildTarget": "unravel-test:build:development"
             }
           },
           "defaultConfiguration": "development"

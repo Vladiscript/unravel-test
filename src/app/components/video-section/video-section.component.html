@@ -1,0 +1,18 @@
+<div class="video-section">
+  <div class="video-wrapper">
+    <app-video></app-video>
+
+    <div class="cards-container">
+      <div class="cards-wrapper">
+        @for (card of cards; let i = $index; track i) {
+          <div
+            class="card-item"
+            [id]="'card' + (i + 1)"
+          >
+            <app-card [cardData]="card"></app-card>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

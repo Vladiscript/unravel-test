@@ -1,27 +1,28 @@
 <main
   class="page-wrapper"
 >
-  <div class="placeholder">
-    <span>Scroll Down</span>
+  <div class="links">
+    <a
+      class="link"
+      routerLink="/"
+      routerLinkActive="active"
+    >
+      Home
+    </a>
+    <a
+      class="link"
+      routerLink="video"
+      routerLinkActive="active"
+    >
+      Video
+    </a>
+    <a
+      class="link"
+      routerLink="text"
+      routerLinkActive="active"
+    >
+      Text
+    </a>
   </div>
-  <div class="video-section">
-
-    <div class="video-wrapper">
-      <app-video></app-video>
-
-      <div class="cards-container">
-        <div class="cards-wrapper">
-          @for (card of cards; let i = $index; track i) {
-            <div
-              class="card-item"
-              [id]="'card' + (i + 1)"
-            >
-              <app-card [cardData]="card"></app-card>
-            </div>
-          }
-        </div>
-      </div>
-    </div>
-  </div>
-  <app-text-section></app-text-section>
+  <router-outlet></router-outlet>
 </main>
